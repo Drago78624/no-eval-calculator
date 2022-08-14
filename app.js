@@ -30,8 +30,6 @@ function operate(num1, num2, operator){
             break;
     }
     console.log(num1, operator, num2)
-
-
 }
 
 numbers.forEach(number => {
@@ -57,7 +55,7 @@ numbers.forEach(number => {
 
 operators.forEach(operatorBtn => {
     operatorBtn.addEventListener("click", ()=>{
-        if(num1 != "" && num2 != "" || num2 == 0 && operator != ""){
+        if(num1 !== "" && num2 !== "" && operator != ""){
             operate(num1, num2, operator)
             num1 = parseInt(display.innerText)
             num2 = "";
@@ -68,7 +66,7 @@ operators.forEach(operatorBtn => {
 });
 
 equal.addEventListener("click", ()=>{
-    if(num1 != "" && num2 != "" && operator != ""){
+    if(num1 !== "" && num2 !== "" && operator != ""){
         operate(num1, num2, operator)
         num1 = parseInt(display.innerText)
         num2 = "";
