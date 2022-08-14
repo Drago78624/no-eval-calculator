@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 500px;
+    height: 600px;
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 12px;
+    background-color: #010101;
+}
+
+.display {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 5rem;
+    padding: 0 1rem;
+}
+
+button {
+    font-size: 2rem;
+    transition: transform 200ms, background-color 200ms;
+    -webkit-transition: transform 200ms, background-color 200ms;
+    -moz-transition: transform 200ms, background-color 200ms;
+    -ms-transition: transform 200ms, background-color 200ms;
+    -o-transition: transform 200ms, background-color 200ms;
+}
+
+button:active, .operator:focus {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+
+.operator {
+    color: white;
+    background-color: #FB9428;
+}
+
+.operator:focus {
+    background-color: #9b5b18;
+}
+
+.number {
+    color: white;
+    background-color: #333333;
+    border: 0;
+}
+
+.clear, .equal {
+    background-color: #A9A9A9;
+}
