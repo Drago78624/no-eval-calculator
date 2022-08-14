@@ -29,7 +29,7 @@ function operate(num1, num2, operator){
             }
             break;
     }
-    console.log(num1, operator, num2)
+    // console.log(num1, operator, num2)
 }
 
 numbers.forEach(number => {
@@ -49,7 +49,7 @@ numbers.forEach(number => {
             }
             num2 = parseInt(display.innerText)
         }
-        console.log(num1, operator, num2)
+        // console.log(num1, operator, num2)
     })
 });
 
@@ -61,7 +61,7 @@ operators.forEach(operatorBtn => {
             num2 = "";
         }
         operator = operatorBtn.innerText
-        console.log(num1, operator, num2)
+        // console.log(num1, operator, num2)
     })
 });
 
@@ -71,7 +71,7 @@ equal.addEventListener("click", ()=>{
         num1 = parseInt(display.innerText)
         num2 = "";
     }
-    console.log(num1, operator, num2)
+    // console.log(num1, operator, num2)
 })
 
 clear.addEventListener("click", ()=>{
@@ -79,5 +79,5 @@ clear.addEventListener("click", ()=>{
     num1 = "";
     num2 = "";
     operator = "";
-    console.log(num1, operator, num2)
+    // console.log(num1, operator, num2)
 })
